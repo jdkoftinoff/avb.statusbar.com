@@ -22,24 +22,15 @@
     <clipPath id="clipPath38">
       <path d="M 0,0 265,0 265,253 0,253 0,0 z" inkscape:connector-curvature="0" id="path40"/>
     </clipPath>
-    <filter id="filter4063" inkscape:label="Blur content" inkscape:menu="Blurs" inkscape:menu-tooltip="Blur the contents of objects, preserving the outline" color-interpolation-filters="sRGB">
-      <feColorMatrix id="feColorMatrix4065" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 " result="result7"/>
-      <feGaussianBlur id="feGaussianBlur4067" result="result6" stdDeviation="5"/>
-      <feComposite id="feComposite4069" in2="result7" operator="atop" in="result6" result="result91"/>
-      <feComposite id="feComposite4071" in2="result91" operator="in"/>
-    </filter>
-    <filter inkscape:collect="always" id="filter6073" x="-0.18813559" width="1.3762712" y="-0.18813559" height="1.3762712" color-interpolation-filters="sRGB">
-      <feGaussianBlur inkscape:collect="always" stdDeviation="5.8138798" id="feGaussianBlur6075"/>
-    </filter>
   </defs>
   <g id="g16" transform="matrix(1.60292 0 0 -1.51598 -297.45 741.641)"/>
-  <g id="g4023" style="fill:none;stroke:#000000;stroke-opacity:0.70588237;filter:url(#filter6073)" transform="matrix(2.04474 0 0 1.93383 -4.42997 -0.840633)">
-    <path d="m 35.2068,48.352 c 0,1.95625 -1.585,3.54125 -3.54125,3.54125 -1.95625,0 -3.54125,-1.585 -3.54125,-3.54125 0,-1.955 1.585,-3.54125 3.54125,-3.54125 1.95625,0 3.54125,1.58625 3.54125,3.54125 z" inkscape:connector-curvature="0" id="path96" style="fill:none;stroke:#000000;stroke-width:8.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
-    <path d="m 71.04055,48.352 c 0,1.95625 -1.58625,3.54125 -3.54125,3.54125 -1.95625,0 -3.54125,-1.585 -3.54125,-3.54125 0,-1.955 1.585,-3.54125 3.54125,-3.54125 1.955,0 3.54125,1.58625 3.54125,3.54125 z" inkscape:connector-curvature="0" id="path98" style="fill:none;stroke:#000000;stroke-width:8.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
-    <path d="m 67.70805,48.1445 c 4.16625,0 15,0 15,0" inkscape:connector-curvature="0" id="path100" style="fill:none;stroke:#000000;stroke-width:2.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
-    <path d="m 31.4568,48.1445 c 22.9175,-32.5 13.33375,32.91625 36.25125,0" inkscape:connector-curvature="0" id="path102" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
-    <path d="m 14.948557,48.1445 c 0,0 12.837604,0 16.508243,0" inkscape:connector-curvature="0" id="path104" style="fill:none;stroke:#000000;stroke-width:2.62278628000000014;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
-    <path d="m 86.04055,48.1445 c 0,20.48 -16.6025,37.0825 -37.0825,37.0825 -20.48125,0 -37.08375,-16.6025 -37.08375,-37.0825 0,-20.48125 16.6025,-37.08375 37.08375,-37.08375 20.48,0 37.0825,16.6025 37.0825,37.08375 z" inkscape:connector-curvature="0" id="path106" style="fill:none;stroke:#000000;stroke-width:8.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.70588237;stroke-dasharray:none"/>
+  <g id="g4023" style="fill:none;stroke:#000000;stroke-opacity:0.70588237;" transform="matrix(2.04474 0 0 1.93383 -4.42997 -0.840633)">
+    <path d="m 35.2068,48.352 c 0,1.95625 -1.585,3.54125 -3.54125,3.54125 -1.95625,0 -3.54125,-1.585 -3.54125,-3.54125 0,-1.955 1.585,-3.54125 3.54125,-3.54125 1.95625,0 3.54125,1.58625 3.54125,3.54125 z" inkscape:connector-curvature="0" id="path96" style="fill: none; stroke: #f2f2f2; stroke-width: 8.75px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
+    <path d="m 71.04055,48.352 c 0,1.95625 -1.58625,3.54125 -3.54125,3.54125 -1.95625,0 -3.54125,-1.585 -3.54125,-3.54125 0,-1.955 1.585,-3.54125 3.54125,-3.54125 1.955,0 3.54125,1.58625 3.54125,3.54125 z" inkscape:connector-curvature="0" id="path98" style="fill: none; stroke: #f2f2f2; stroke-width: 8.75px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
+    <path d="m 67.70805,48.1445 c 4.16625,0 15,0 15,0" inkscape:connector-curvature="0" id="path100" style="fill: none; stroke: #f2f2f2; stroke-width: 2.5px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
+    <path d="m 31.4568,48.1445 c 22.9175,-32.5 13.33375,32.91625 36.25125,0" inkscape:connector-curvature="0" id="path102" style="fill: none; stroke: #f2f2f2; stroke-width: 5px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
+    <path d="m 14.948557,48.1445 c 0,0 12.837604,0 16.508243,0" inkscape:connector-curvature="0" id="path104" style="fill: none; stroke: #f2f2f2; stroke-width: 2.62278628px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
+    <path d="m 86.04055,48.1445 c 0,20.48 -16.6025,37.0825 -37.0825,37.0825 -20.48125,0 -37.08375,-16.6025 -37.08375,-37.0825 0,-20.48125 16.6025,-37.08375 37.08375,-37.08375 20.48,0 37.0825,16.6025 37.0825,37.08375 z" inkscape:connector-curvature="0" id="path106" style="fill: none; stroke: #f2f2f2; stroke-width: 8.75px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 0.70588237; stroke-dasharray: none; "/>
   </g>
   <g id="g4031" transform="matrix(2.04474 0 0 1.93383 -13.9414 -8.58962)">
     <path style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:8.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" id="path4033" inkscape:connector-curvature="0" d="m 35.2068,48.352 c 0,1.95625 -1.585,3.54125 -3.54125,3.54125 -1.95625,0 -3.54125,-1.585 -3.54125,-3.54125 0,-1.955 1.585,-3.54125 3.54125,-3.54125 1.95625,0 3.54125,1.58625 3.54125,3.54125 z"/>
