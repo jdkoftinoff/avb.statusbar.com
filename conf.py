@@ -9,16 +9,16 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
+BLOG_AUTHOR = "Jeff Koftinoff"
+BLOG_TITLE = "Audio Video Bridging"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://nikola.ralsina.com.ar"
+SITE_URL = "http://avb.statusbar.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://nikola.ralsina.com.ar"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BLOG_EMAIL = "jeff.koftinoff@statusbar.com"
+BLOG_DESCRIPTION = "AVB Networking Information and News"
 
 # Nikola is multilingual!
 #
@@ -55,9 +55,13 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 SIDEBAR_LINKS = {
     DEFAULT_LANG: (
+        ('/about.html', 'About'),
+        ('/news.html', 'News'),
+        ('/faq.html', 'FAQ'),
+        ('/tools.html', 'Tools'),
+        ('/code.html', 'Code'),
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
-        ('/rss.xml', 'RSS'),
     ),
 }
 
@@ -89,15 +93,16 @@ SIDEBAR_LINKS = {
 #
 
 post_pages = (
-    ("posts/*.txt", "posts", "post.tmpl", True),
-    ("stories/*.txt", "stories", "story.tmpl", False),
+    ("news/*.txt", "news", "post.tmpl", True),
+    ("pages/*.txt", "", "story.tmpl", False),
+    ("article/*.txt", "article", "story.tmpl", False),
 )
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-# FILES_FOLDERS = {'files': '' }
-# Which means copy 'files' into 'output'
+FILES_FOLDERS = {'files': 'files' }
+#Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
 # Feel free to add or delete extensions to any list, but don't add any new
@@ -141,7 +146,7 @@ post_compilers = {
 # TAG_PAGES_ARE_INDEXES = True
 
 # Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "news"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -167,7 +172,13 @@ post_compilers = {
 # relative URL.
 #
 # If you don't need any of these, just set to []
-# REDIRECTIONS = []
+REDIRECTIONS = [ 
+    ('about.html','/about'),
+    ('news.html','/news'),
+    ('tools.html','/tools'),
+    ('code.html','/code'),
+    ('faq.html','/faq'),
+]
 
 # Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
@@ -233,13 +244,13 @@ post_compilers = {
 # translated
 
 # Name of the theme to use.
-# THEME = 'site'
+THEME = 'site_simplex'
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
 # Can be any of autumn borland bw colorful default emacs friendly fruity manni
 # monokai murphy native pastie perldoc rrt tango trac vim vs
-# CODE_COLOR_SCHEME = default
+CODE_COLOR_SCHEME = 'trac'
 
 # If you use 'site-reveal' theme you can select several subthemes
 # THEME_REVEAL_CONGIF_SUBTHEME = 'sky'
@@ -252,7 +263,7 @@ post_compilers = {
 
 # date format used to display post dates.
 # (str used by datetime.datetime.strftime)
-# DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%Y-%m-%d %H:%M'
 
 # FAVICONS contains (name, file, size) tuples.
 # Used for create favicon link like this:
@@ -270,11 +281,11 @@ post_compilers = {
 # A HTML fragment describing the license, for the sidebar. Default is "".
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
-# LICENSE = """
-# <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-# <img alt="Creative Commons License BY-NC-SA"
-# style="border-width:0; margin-bottom:12px;"
-# src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+LICENSE = """
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+<img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
@@ -287,14 +298,14 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
 # Default is "nikolademo", used by the demo sites
-# DISQUS_FORUM = "nikolademo"
+DISQUS_FORUM = "avb-statusbar"
 
 # Create index.html for story folders?
-# STORY_INDEX = False
+STORY_INDEX = True
 # Enable comments on story pages?
-# COMMENTS_IN_STORIES = False
+COMMENTS_IN_STORIES = False
 # Enable comments on picture gallery pages?
-# COMMENTS_IN_GALLERIES = False
+COMMENTS_IN_GALLERIES = False
 
 # What file should be used for directory indexes?
 # Defaults to index.html
@@ -307,7 +318,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # it will instead /foo/default.html => /foo)
 # (Note: This was briefly STRIP_INDEX_HTML in v 5.4.3 and 5.4.4)
 # Default = False
-# STRIP_INDEXES = False
+STRIP_INDEXES = True
 
 # Should the sitemap list directories which only include other directories
 # and no files.
@@ -315,14 +326,14 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # If this is False
 # e.g. /2012 includes only /01, /02, /03, /04, ...: don't add it to the sitemap
 # if /2012 includes any files (including index.html)... add it to the sitemap
-# SITEMAP_INCLUDE_FILELESS_DIRS = True
+SITEMAP_INCLUDE_FILELESS_DIRS = True
 
 # Instead of putting files in <slug>.html, put them in
 # <slug>/index.html. Also enables STRIP_INDEXES
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata
-# PRETTY_URLS = False
+PRETTY_URLS = True
 
 # Do you want a add a Mathjax config file?
 # MATHJAX_CONFIG = ""
@@ -350,19 +361,19 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 
 # Enable Addthis social buttons?
 # Defaults to true
-# ADD_THIS_BUTTONS = True
+ADD_THIS_BUTTONS = True
 
 # Hide link to source for the posts?
-# HIDE_SOURCELINK = False
+HIDE_SOURCELINK = True
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 10
 
 # RSS_LINK is a HTML fragment to link the RSS or Atom feeds. If set to None,
 # the base.tmpl will use the feed Nikola generates. However, you may want to
 # change it for a feedburner feed or something else.
-# RSS_LINK = None
+RSS_LINK = None
 
 # Show only teasers in the RSS feed? Default to True
 # RSS_TEASERS = True
@@ -371,25 +382,25 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # custom search (http://www.google.com/cse/)
 # Or a duckduckgo search: https://duckduckgo.com/search_box.html
 # Default is no search form.
-# SEARCH_FORM = ""
+# SEARCH_FORM = "https://duckduckgo.com/search_box.html"
 #
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
-#SEARCH_FORM = """
-#<!-- Custom search -->
-#<form method="get" id="search" action="http://duckduckgo.com/"
-# class="navbar-form pull-left">
-#<input type="hidden" name="sites" value="%s"/>
-#<input type="hidden" name="k8" value="#444444"/>
-#<input type="hidden" name="k9" value="#D51920"/>
-#<input type="hidden" name="kt" value="h"/>
-#<input type="text" name="q" maxlength="255"
-# placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
-#<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-#</form>
-#<!-- End of custom search -->
-#""" % SITE_URL
+SEARCH_FORM = """
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/"
+ class="navbar-form pull-left">
+<input type="hidden" name="sites" value="%s"/>
+<input type="hidden" name="k8" value="#444444"/>
+<input type="hidden" name="k9" value="#D51920"/>
+<input type="hidden" name="kt" value="h"/>
+<input type="text" name="q" maxlength="255"
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+<!-- End of custom search -->
+""" % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
 #SEARCH_FORM = """
@@ -404,31 +415,31 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # Also, there is a local search plugin you can use, based on Tipue, but it requires setting several 
 # options:
 
-# SEARCH_FORM = """
-# <span class="navbar-form pull-left">
-# <input type="text" id="tipue_search_input">
-# </span>"""
+SEARCH_FORM = """
+<span class="navbar-form pull-left">
+<input type="text" id="tipue_search_input">
+</span>"""
 # 
-# ANALYTICS = """
-# <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
-# <script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
-# <script type="text/javascript">
-# $(document).ready(function() {
+ANALYTICS = """
+<script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
+<script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
     # $('#tipue_search_input').tipuesearch({
         # 'mode': 'json',
         # 'contentLocation': '/assets/js/tipuesearch_content.json',
         # 'showUrl': false
     # });
-# });
-# </script>
-# """
+});
+</script>
+"""
 
-# EXTRA_HEAD_DATA = """
-# <link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
-# <div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
-# """
-# ENABLED_EXTRAS = ['local_search']
-#
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
+<div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
+"""
+ENABLED_EXTRAS = ['local_search']
+
 
 
 # Use content distribution networks for jquery and twitter-bootstrap css and js
@@ -487,10 +498,10 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # (ex. 2012-03-30T23:00:00+02:00),
 # set timzone if you want a localized posted date.
 #
-# TIMEZONE = 'Europe/Zurich'
+TIMEZONE = 'US/Pacific'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -512,4 +523,16 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 
-GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT = {
+    'sidebar_links': {
+        'en': (
+            ('/about', 'About'),
+            ('/news', 'News'),
+            ('/faq', 'FAQ'),
+            ('/tools', 'Tools'),
+            ('/code', 'Code'),
+            ('/archive.html', 'Archives'),
+            ('/categories/index.html', 'Tags'),
+            ),
+    }
+}
