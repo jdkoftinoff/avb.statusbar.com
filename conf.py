@@ -10,10 +10,10 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jeff Koftinoff"
-BLOG_TITLE = "Audio Video Bridging"
+BLOG_TITLE = "avb"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://avb.statusbar.com/"
+SITE_URL = "http://avb1.statusbar.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://nikola.ralsina.com.ar"
@@ -53,18 +53,6 @@ TRANSLATIONS = {
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
-SIDEBAR_LINKS = {
-    DEFAULT_LANG: (
-        ('/about.html', 'About'),
-        ('/news.html', 'News'),
-        ('/faq.html', 'FAQ'),
-        ('/tools.html', 'Tools'),
-        ('/code.html', 'Code'),
-        ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
-    ),
-}
-
 
 ##############################################
 # Below this point, everything is optional
@@ -101,7 +89,7 @@ post_pages = (
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-FILES_FOLDERS = {'files': 'files' }
+FILES_FOLDERS = {'files': '' }
 #Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
@@ -185,7 +173,9 @@ REDIRECTIONS = [
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = [
+      "rsync -rav --delete-after output/* jeffk@jdks2013.statusbar.com:/var/www/web/avb1.statusbar.com/"
+   ]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -230,9 +220,9 @@ REDIRECTIONS = [
 # Galleries are folders in galleries/
 # Final location of galleries will be output / GALLERY_PATH / gallery_name
 # GALLERY_PATH = "galleries"
-# THUMBNAIL_SIZE = 180
-# MAX_IMAGE_SIZE = 1280
-# USE_FILENAME_AS_TITLE = True
+THUMBNAIL_SIZE = 180
+MAX_IMAGE_SIZE = 1280
+USE_FILENAME_AS_TITLE = True
 
 # #############################################################################
 # HTML fragments and diverse things that are used by the templates
@@ -253,12 +243,12 @@ THEME = 'site_simplex'
 CODE_COLOR_SCHEME = 'trac'
 
 # If you use 'site-reveal' theme you can select several subthemes
-# THEME_REVEAL_CONGIF_SUBTHEME = 'sky'
+THEME_REVEAL_CONGIF_SUBTHEME = 'serif'
 # You can also use: beige/serif/simple/night/default
 
 # Again, if you use 'site-reveal' theme you can select several transitions
 # between the slides
-# THEME_REVEAL_CONGIF_TRANSITION = 'cube'
+THEME_REVEAL_CONGIF_TRANSITION = 'linear'
 # You can also use: page/concave/linear/none/default
 
 # date format used to display post dates.
@@ -289,7 +279,7 @@ src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - <a href="http://www.jdkoftinoff.com/">J.D. Koftinoff Software, Ltd.</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year)
@@ -310,7 +300,7 @@ COMMENTS_IN_GALLERIES = False
 # What file should be used for directory indexes?
 # Defaults to index.html
 # Common other alternatives: default.html for IIS, index.php
-# INDEX_FILE = "index.html"
+INDEX_FILE = "index.html"
 
 # If a link ends in /index.html,  drop the index.html part.
 # http://mysite/foo/bar/index.html => http://mysite/foo/bar/
@@ -336,23 +326,23 @@ SITEMAP_INCLUDE_FILELESS_DIRS = True
 PRETTY_URLS = True
 
 # Do you want a add a Mathjax config file?
-# MATHJAX_CONFIG = ""
+#MATHJAX_CONFIG = ""
 
 # If you are using the compile-ipynb plugin, just add this one:
-#MATHJAX_CONFIG = """
-#<script type="text/x-mathjax-config">
-#MathJax.Hub.Config({
-#    tex2jax: {
-#        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ]
-#    },
-#    displayAlign: 'left', // Change this to 'center' to center equations.
-#    "HTML-CSS": {
-#        styles: {'.MathJax_Display': {"margin": 0}}
-#    }
-#});
-#</script>
-#"""
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ]
+    },
+    displayAlign: 'center', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # What MarkDown extensions to enable?
 # You will also get gist, nikola and podcast because those are
@@ -361,7 +351,7 @@ PRETTY_URLS = True
 
 # Enable Addthis social buttons?
 # Defaults to true
-ADD_THIS_BUTTONS = True
+ADD_THIS_BUTTONS = False
 
 # Hide link to source for the posts?
 HIDE_SOURCELINK = True
@@ -415,10 +405,10 @@ SEARCH_FORM = """
 # Also, there is a local search plugin you can use, based on Tipue, but it requires setting several 
 # options:
 
-SEARCH_FORM = """
-<span class="navbar-form pull-left">
-<input type="text" id="tipue_search_input">
-</span>"""
+#SEARCH_FORM = """
+#<span class="navbar-form pull-left">
+#<input type="text" id="tipue_search_input">
+#</span>"""
 # 
 ANALYTICS = """
 <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
@@ -526,13 +516,14 @@ USE_BUNDLES = True
 GLOBAL_CONTEXT = {
     'sidebar_links': {
         'en': (
-            ('/about', 'About'),
-            ('/news', 'News'),
-            ('/faq', 'FAQ'),
-            ('/tools', 'Tools'),
-            ('/code', 'Code'),
+#            ('/about/', 'About'),
+            ('/news/', 'News'),
+            ('/faq/', 'FAQ'),
+            ('/article/', 'Articles'),
+            ('/tools/', 'Tools'),
+            ('/code/', 'Code'),
             ('/archive.html', 'Archives'),
-            ('/categories/index.html', 'Tags'),
+#            ('/categories/index.html', 'Tags'),
             ),
     }
 }
