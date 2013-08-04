@@ -10,7 +10,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jeff Koftinoff"
-BLOG_TITLE = "avb"
+BLOG_TITLE = "AVB"
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "http://avb1.statusbar.com/"
@@ -174,7 +174,7 @@ REDIRECTIONS = [
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
-      "rsync -rav --delete-after output/* jeffk@jdks2013.statusbar.com:/var/www/web/avb1.statusbar.com/"
+      "rsync -rav output/* jeffk@jdks2013.statusbar.com:/var/www/web/avb1.statusbar.com/"
    ]
 
 # Where the output site should be located
@@ -234,7 +234,7 @@ USE_FILENAME_AS_TITLE = True
 # translated
 
 # Name of the theme to use.
-THEME = 'site_simplex'
+THEME = 'site_cyborg'
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -377,20 +377,20 @@ RSS_LINK = None
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
-SEARCH_FORM = """
-<!-- Custom search -->
-<form method="get" id="search" action="http://duckduckgo.com/"
- class="navbar-form pull-left">
-<input type="hidden" name="sites" value="%s"/>
-<input type="hidden" name="k8" value="#444444"/>
-<input type="hidden" name="k9" value="#D51920"/>
-<input type="hidden" name="kt" value="h"/>
-<input type="text" name="q" maxlength="255"
- placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
-<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-</form>
-<!-- End of custom search -->
-""" % SITE_URL
+#SEARCH_FORM = """
+#<!-- Custom search -->
+#<form method="get" id="search" action="http://duckduckgo.com/"
+# class="navbar-form pull-left">
+#<input type="hidden" name="sites" value="%s"/>
+#<input type="hidden" name="k8" value="#444444"/>
+#<input type="hidden" name="k9" value="#D51920"/>
+#<input type="hidden" name="kt" value="h"/>
+#<input type="text" name="q" maxlength="255"
+# placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
+#<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+#</form>
+#<!-- End of custom search -->
+#""" % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
 #SEARCH_FORM = """
@@ -522,7 +522,7 @@ GLOBAL_CONTEXT = {
             ('/article/', 'Articles'),
             ('/tools/', 'Tools'),
             ('/code/', 'Code'),
-            ('/archive.html', 'Archives'),
+#            ('/archive.html', 'Archives'),
 #            ('/categories/index.html', 'Tags'),
             ),
     }

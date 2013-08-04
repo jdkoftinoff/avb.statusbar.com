@@ -1,14 +1,27 @@
 .. link: /
-.. description: Front Page 
+.. description: AVB Front Page
 .. tags: 
 .. date: 2013/07/27 14:59:17
 .. title: AVB
 .. slug: index
 
-=================
-avb.statusbar.com
-=================
 
-Audio Video Bridging
+.. class:: hero-unit
+
+.. admonition:: Audio Video Bridging
+
+   A collection of links, tools and open source code for Audio Video Bridging (AVB) technologies.
+
+Contents
+--------
+
+This site contains the information about the following projects:
+
+* `AVB tools <tools/>`_, spreadsheets and other utility tools for helping people understand AVB.
+* `AVB code <code/>`_, open source code useful for AVB devices.
+* `FAQ <faq/>`_
+* `News <news/>`_, what's new on this site and in the AVB industry.
+
+
 
 
