@@ -4,7 +4,7 @@
 .. date: 2013/07/27 14:59:17
 .. title: AVB
 .. slug: front
-
+.. nocomments: True
 
 #. AVB tools, spreadsheets and other utility tools for helping people understand AVB.
 #. jdksavdecc-c, an open source library for the AVDECC protocol in the C programming language.
