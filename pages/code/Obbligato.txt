@@ -17,6 +17,8 @@ The Obbligato repository is hosted on github:
 
 To clone the respository, use `git <http://gitscm.com>`_:
 
+.. code:: bash
+
    git clone https://github.com/jdkoftinoff/Obbligato.git
 
 Documentation
