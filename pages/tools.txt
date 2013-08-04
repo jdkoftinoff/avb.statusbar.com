@@ -5,9 +5,14 @@
 .. title: Tools
 .. slug: tools
 
-Tools
-=====
+AVB Bandwidth Calculator for Apple Numbers
+==========================================
 
-tools!!
+* `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator_V2_3.zip>`_
+
+Changes
+-------
+
+* Fixed '(add 1 for some types of talkers which by design need to be able to send one extra or one less sample per packet sometimes)' field.
 
 
