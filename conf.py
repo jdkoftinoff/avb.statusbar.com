@@ -293,7 +293,7 @@ DISQUS_FORUM = "avb-statusbar"
 # Create index.html for story folders?
 STORY_INDEX = True
 # Enable comments on story pages?
-COMMENTS_IN_STORIES = False
+COMMENTS_IN_STORIES = True
 # Enable comments on picture gallery pages?
 COMMENTS_IN_GALLERIES = False
 
