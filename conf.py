@@ -13,7 +13,7 @@ BLOG_AUTHOR = "Jeff Koftinoff"
 BLOG_TITLE = "AVB"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://avb1.statusbar.com/"
+SITE_URL = "http://avb.statusbar.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://nikola.ralsina.com.ar"
@@ -174,7 +174,7 @@ REDIRECTIONS = [
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
-      "rsync -rav output/* jeffk@jdks2013.statusbar.com:/var/www/web/avb1.statusbar.com/"
+      "rsync -rav output/* --delete-after jeffk@jdks2013.statusbar.com:/var/www/web/avb.statusbar.com/"
    ]
 
 # Where the output site should be located
