@@ -5,6 +5,3 @@
 .. title: Getting Started
 .. slug: getting-started
 
-This is the getting started article
-
-Write your post here.
