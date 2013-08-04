@@ -30,6 +30,8 @@ Documentation
 Prerequisites
 -------------
 
+The `Obbligato <../Obbligato/>`_ C++ library.
+
 A C++11 compiler such as: 
 
 * `Clang 3.1+ <http://clang.llvm.org/cxx_status.html>`_.
