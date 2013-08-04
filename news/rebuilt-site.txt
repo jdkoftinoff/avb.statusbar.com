@@ -5,6 +5,6 @@
 .. title: Rebuilt site
 .. slug: rebuilt-site
 
-Rebuilt this site with the Nikola tool.
+Rebuilt this site with the `Nikola <http://nikola.ralsina.com.ar>`_ tool.
 
 
