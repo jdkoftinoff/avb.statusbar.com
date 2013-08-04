@@ -5,3 +5,10 @@
 .. title: Getting Started
 .. slug: getting-started
 
+First Steps
+-----------
+
+#. Familiarize yourself with the standards.
+#. Review the Technical Papers from the `Resource Library <http://www.avnu.org/resource_library>`_ from `AVnu <http://www.avnu.org/>`_ - 
+
+
