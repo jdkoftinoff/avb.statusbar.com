@@ -59,7 +59,7 @@ That is incorrect.  All end points are required to implement 802.1AS-2011, 802.1
 Specifically see the PICS requirements for talkers defined in IEEE Std 802.1BA-2011 Clause 7.4.7,"Common requirements - Talker end stations" where it shows in Clause 7.4.7.1 the item "T-AS" requires 802.1AS, "T-SRP" requires 802.1Qat, and item "T-FQ" which requires forwarding and queuing of time sensitive streams (FQTSS) aka 802.1Qav. Further details of these requirements are in 7.4.7.2, and 7.4.7.3.
 
 What is the difference between PTP, PTPv2, gPTP, 802.1AS and IEEE 1588?
-----------------------------------------------------------------
+-----------------------------------------------------------------------
 
 * IEEE Std 1588-2008 defines the PTPv2 (Precision Time Protocol Version 2) framework and is also known as PTPv2.
 * IEEE Std 802.1AS-2011 defines a specific profile of IEEE 1588v2 with additional timing features which greatly improve timing accuracy and lock time.  This is called gPTP (Generalized Precision Time Protocol).
