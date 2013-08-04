@@ -516,7 +516,7 @@ USE_BUNDLES = True
 GLOBAL_CONTEXT = {
     'sidebar_links': {
         'en': (
-#            ('/about/', 'About'),
+            ('/about/', 'About'),
             ('/news/', 'News'),
             ('/faq/', 'FAQ'),
             ('/article/', 'Articles'),

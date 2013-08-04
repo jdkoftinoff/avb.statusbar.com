@@ -5,10 +5,15 @@
 .. title: FAQ
 .. slug: faq
 
+What is this website for?
+-------------------------
+
+See `About avb.statusbar.com </about/>`_.
+
 What is AVB?
 ------------
 
-Audio Video Bridging is a term for a collection of IEEE Standards for time sensitive networking which facilitates the transport of high performance audio and video on a LAN:
+`Audio Video Bridging <http://en.wikipedia.org/wiki/Audio_Video_Bridging>`_ is a term for a collection of IEEE Standards for time sensitive networking which facilitates the transport of high performance audio and video on a LAN:
 
 * `IEEE Std. 802.1BA-2011 <http://standards.ieee.org/findstds/standard/802.1BA-2011.html>`_, for profiles and overview.
 * `IEEE Std. 802.1Q-2011 <http://standards.ieee.org/findstds/standard/802.1Q-2011.html>`_, for traffic shaping (FQTSS) and the stream reservation protocol (SRP).
