@@ -43,10 +43,10 @@ An AVB Device that is both an AVDECC Talker and AVDECC Listener is required to s
 * IEEE Std. 802.1AS-2011 on each AVB enabled ethernet port
 * IEEE P1722.1-D23
 
-What is 802.1Qav and 802.1Qat?
-------------------------------
+What are 802.1Qav and 802.1Qat?
+-------------------------------
 
-802.1Qav and 802.1Qat are the ammendments to IEEE Std 802.1Q. 
+802.1Qav and 802.1Qat are two of the ammendments to IEEE Std 802.1Q-2005 that were rolled into IEEE Std 802.1Q-2011.
 
 * What was known as 802.1Qav is now known as IEEE Std 802.1Q-2011 Clause 34, "Forwarding and Queuing for time-sensitive streams".
 * What was known as 802.1Qat is now known as IEEE Std 802.1Q-2011 Clause 35, "Stream Reservation Protocol".
@@ -54,14 +54,14 @@ What is 802.1Qav and 802.1Qat?
 Someone said to enable a AVB stream, the endpoint does not have to support Qav, Qat, the AVB switch can take care of it.
 ------------------------------------------------------------------------------------------------------------------------
 
-That is incorrect.  All end points are required to implement 802.1AS-2011, 802.1Qav AND 802.1Qat.  This is all defined in 802.1BA-2011.
+That is incorrect.  All end points are required to implement 802.1AS-2011, 802.1Qav AND 802.1Qat.  This is all defined in IEEE Std 802.1BA-2011.
 
 Specifically see the PICS requirements for talkers defined in IEEE Std 802.1BA-2011 Clause 7.4.7,"Common requirements - Talker end stations" where it shows in Clause 7.4.7.1 the item "T-AS" requires 802.1AS, "T-SRP" requires 802.1Qat, and item "T-FQ" which requires forwarding and queuing of time sensitive streams (FQTSS) aka 802.1Qav. Further details of these requirements are in 7.4.7.2, and 7.4.7.3.
 
-What is the difference between PTP, gPTP, 802.1AS and IEEE 1588v2?
-------------------------------------------------------------------
+What is the difference between PTP, PTPv2, gPTP, 802.1AS and IEEE 1588?
+----------------------------------------------------------------
 
-* IEEE Std 1588-2008 defines the PTP (Precision Time Protocol) framework.
+* IEEE Std 1588-2008 defines the PTPv2 (Precision Time Protocol Version 2) framework and is also known as PTPv2.
 * IEEE Std 802.1AS-2011 defines a specific profile of IEEE 1588v2 with additional timing features which greatly improve timing accuracy and lock time.  This is called gPTP (Generalized Precision Time Protocol).
 
 Can an AVB device just use IEEE 1588v2 (PTP) instead of 802.1AS?
@@ -78,10 +78,7 @@ If you have only one stream, it is typically feasible to implement FQTSS in soft
 
 But if you were needing to provide 4 streams simultaneously, then it is much harder to do in software as you then need to send a time sensitive stream packet every 31 microseconds (and no sooner).
 
-Since this can be expensive and inefficient to implement in software so ideally you want an ethernet interface like the intel i210 ( with the driver at https://github.com/intel-ethernet/Open-AVB/tree/master/kmod/igb ) or the equivalent Broadcom ethernet chip which the Apple Mac OS X uses.
-
-
-
+Since this can be expensive and inefficient to implement in software so ideally you want an Ethernet interface like the intel i210 ( with the driver at https://github.com/intel-ethernet/Open-AVB/tree/master/kmod/igb ) or the equivalent Broadcom ethernet chip which the Apple Mac OS X uses.
 
 
 
