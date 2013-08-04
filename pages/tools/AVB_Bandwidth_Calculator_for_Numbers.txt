@@ -1,0 +1,25 @@
+.. link: 
+.. description: AVB Bandwidth Calculator for Numbers
+.. tags: tools calculator
+.. date: 2013/07/27 14:59:17
+.. title: AVB Bandwidth Calculator for Numbers
+.. slug: AVB-Bandwidth-Calculator-for-Numbers
+
+AVB Bandwidth Calculator for Apple Numbers
+==========================================
+
+Version 2.3
+-----------
+
+.. slides::
+
+   /tools/AVB_Bandwidth_Calculator/AVB_Bandwidth_Calculator_V2_3.png
+
+* `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator/AVB_Bandwidth_Calculator_V2_3.zip>`_
+
+Changes
+-------
+
+* Fixed '(add 1 for some types of talkers which by design need to be able to send one extra or one less sample per packet sometimes)' field.
+
+
