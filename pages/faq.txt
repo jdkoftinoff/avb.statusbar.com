@@ -67,7 +67,7 @@ What is the difference between PTP, PTPv2, gPTP, 802.1AS and IEEE 1588?
 -----------------------------------------------------------------------
 
 * IEEE Std 1588-2008 defines the PTPv2 (Precision Time Protocol Version 2) framework and is also known as PTPv2.
-* IEEE Std 802.1AS-2011 defines a specific profile of IEEE 1588v2 with additional timing features which greatly improve timing accuracy and lock time.  This is called gPTP (Generalized Precision Time Protocol).
+* IEEE Std 802.1AS-2011 defines a specific profile of IEEE 1588-2008 with additional timing features which greatly improve timing accuracy and lock time.  This is called gPTP (Generalized Precision Time Protocol).
 
 Can an AVB device just use IEEE 1588v2 (PTP) instead of 802.1AS?
 ----------------------------------------------------------------
