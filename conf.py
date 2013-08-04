@@ -351,7 +351,7 @@ MathJax.Hub.Config({
 
 # Enable Addthis social buttons?
 # Defaults to true
-ADD_THIS_BUTTONS = False
+ADD_THIS_BUTTONS = True
 
 # Hide link to source for the posts?
 HIDE_SOURCELINK = True
