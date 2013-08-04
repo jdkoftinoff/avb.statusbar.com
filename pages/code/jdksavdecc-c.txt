@@ -1,6 +1,6 @@
 .. link: 
 .. description: jdksavdecc-c
-.. tags: code c avdecc 
+.. tags: code, c, avdecc 
 .. date: 2013/07/27 14:59:17
 .. title: jdksavdecc-c
 .. slug: jdksavdecc-c
