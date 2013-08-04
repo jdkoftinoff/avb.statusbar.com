@@ -1,0 +1,40 @@
+
+.. link: 
+.. description: IEEE 1722.1 (AVDECC) Protocol Features
+.. tags: avdecc
+.. date: 2013/07/28 15:07:51
+.. title: IEEE 1722.1 Protocol Features
+.. slug: 1722.1-features
+
+
+Discovery:
+
+* Advertising
+* Querying
+  * Global
+  * Specific
+* Support for redundant networks
+
+Enumeration and Control:
+
+* Describe the internal structure of the device from the stream entry/exit through to the "physical" entry/exit
+* Describe the internal structure within the different limitations of the device (channel limits at different sample rates, etc)
+* Describe the internal latency through the device from the defined timing reference plane to the "physical" world (or the define latency from reference plane to reference plane via the DSP)
+* Describes and controls the clocking model within the device to configure media clocking sources, sample rate converters, etc.
+* Describe the AVB capabilities of the interfaces and provide the current AVB related information (802.1AS GMID, MSRP domain) for each AVB interface
+* Describe and control the mapping of media sources and sinks to channels within the stream sinks and sources
+* Describe and control the signal chains (DSP, mute, volume, mixers, selectors, etc) through the device
+* Provide user settable names for many objects within the device including stream, media sources and sinks (jacks), controls, etc
+* Describe and control generic control points within the device (location information, enables, video camera controls, etc)
+* Perform key management for securing the network
+* Performs basic authentication of controllers
+* Enable and disable transport and stream security
+* Distributes updates to interested controllers
+* Provides diagnostic information such as avb interface event counters and errors, stream packet event counters and errors, and clock domain lock status, as well as vendor specific counters when necessary.
+
+Connection Management:
+
+* Connection of streams
+* Persistent connections
+* Transport of relevant SRP data
+
