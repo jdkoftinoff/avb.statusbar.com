@@ -8,6 +8,13 @@
 AVB Bandwidth Calculator for Apple Numbers
 ==========================================
 
+Version 2.3
+-----------
+
+.. slides::
+
+   /tools/AVB_Bandwidth_Calculator_V2_3.png
+
 * `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator_V2_3.zip>`_
 
 Changes
