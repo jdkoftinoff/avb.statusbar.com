@@ -25,7 +25,17 @@ To clone the respository, use `git <http://gitscm.com>`_:
 Documentation
 -------------
 
-   http://avb1.statusbar.com/docs/Stretto/
+
+master branch
+`````````````
+
+   http://avb1.statusbar.com/docs/master/Stretto/
+
+development branch
+``````````````````
+
+   http://avb1.statusbar.com/docs/devel/Stretto/
+
 
 Prerequisites
 -------------

@@ -24,7 +24,15 @@ To clone the respository, use `git <http://gitscm.com>`_:
 Documentation
 -------------
 
-   http://avb1.statusbar.com/docs/microsupport/
+master branch
+`````````````
+
+   http://avb1.statusbar.com/docs/master/microsupport/
+
+development branch
+``````````````````
+
+   http://avb1.statusbar.com/docs/devel/microsupport/
 
 Prerequisites
 -------------

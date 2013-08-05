@@ -24,7 +24,15 @@ To clone the respository, use `git <http://gitscm.com>`_:
 Documentation
 -------------
 
-   http://avb1.statusbar.com/docs/Obbligato/
+master branch
+`````````````
+
+   http://avb1.statusbar.com/docs/master/Obbligato/
+
+development branch
+``````````````````
+
+   http://avb1.statusbar.com/docs/devel/Obbligato/
 
 Prerequisites
 -------------
