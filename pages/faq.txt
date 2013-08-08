@@ -56,8 +56,8 @@ What are 802.1Qav and 802.1Qat?
 * What was known as 802.1Qav is now known as IEEE Std 802.1Q-2011 Clause 34, "Forwarding and Queuing for time-sensitive streams".
 * What was known as 802.1Qat is now known as IEEE Std 802.1Q-2011 Clause 35, "Stream Reservation Protocol".
 
-Someone said to enable a AVB stream, the endpoint does not have to support Qav, Qat, the AVB switch can take care of it.
-------------------------------------------------------------------------------------------------------------------------
+Someone said that an AVB endpoint does not have to support Qav, Qat - the AVB switch can take care of it
+--------------------------------------------------------------------------------------------------------
 
 That is incorrect.  All end points are required to implement 802.1AS-2011, 802.1Qav AND 802.1Qat.  This is all defined in IEEE Std 802.1BA-2011.
 
@@ -84,6 +84,58 @@ If you have only one stream, it is typically feasible to implement FQTSS in soft
 But if you were needing to provide 4 streams simultaneously, then it is much harder to do in software as you then need to send a time sensitive stream packet every 31 microseconds (and no sooner).
 
 Since this can be expensive and inefficient to implement in software so ideally you want an Ethernet interface like the intel i210 ( with the driver at https://github.com/intel-ethernet/Open-AVB/tree/master/kmod/igb ) or the equivalent Broadcom ethernet chip which the Apple Mac OS X uses.
+
+How many channels of audio can you have on a network link with AVB?
+-------------------------------------------------------------------
+
+The answer to this question depends on:
+
+* The bandwidth of the network link (100baseT or gigabit Ethernet)
+* The channels per stream
+* The format of the audio media
+* The count of streams
+
+Use the `tools </tools/>`_ to calculate arbitrary combinations.
+
+Common examples:
+
+One Channel Per Stream
+``````````````````````
+
+Using one channel per stream is the most inefficient but also the most flexible:
+
+* 48 kHz Audio over a 100baseT Ethernet link, one channel per stream: 11 streams = 11 channels per link
+* 48 kHz Audio over a Gigabit Ethernet link, one channel per stream: 118 streams = 118 channels per link
+* 96 kHz Audio over a 100baseT Ethernet link, one channel per stream: 9 streams = 9 channels per link
+* 96 kHz Audio over a Gigabit Ethernet link, one channel per stream:  95 streams = 95 channels per link
+
+Maximum Channels Per Stream
+```````````````````````````
+
+The maximum number of channels that can be put in a single stream is dependant on packet time, packet size, and audio format:
+
+* 48 kHz Audio over a 100baseT Ethernet link:  45 channels per stream, 1 stream = 45 channels per link
+* 48 kHz Audio over a Gigabit Ethernet link: 61 channels per stream, 7 streams = 427 channels per link
+* 96 kHz Audio over a 100baseT ethernet link: 22 channels per stream, 1 stream = 22 channels per link
+* 96 kHz Audio over a Gigabit ethernet link: 30 channels per stream, 7 streams = 210 channels per link
+
+
+How many AVB streams of audio can you have on an entire network?
+----------------------------------------------------------------
+
+The maximum number of streams on an AVB network depends on the streams properties.
+
+* If the streams properties are not packable, there can be 318 streams on a network.
+* If each talker device provides streams with stream properties that are packable, there can be 318 talkers on a network each with as many streams as they can fit on their links.
+* If all the stream properties across the entire network are packable, there can be much more than 318 talkers on a network.
+
+
+
+
+
+
+
+
 
 
 
