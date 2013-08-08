@@ -125,12 +125,26 @@ How many AVB streams of audio can you have on an entire network?
 
 The maximum number of streams on an AVB network depends on the streams properties.
 
-* If the streams properties are not packable, there can be 318 streams on a network.
+* If the streams properties are not packable, there can be 318 streams on a network - each with 1 or more channels of audio.
 * If each talker device provides streams with stream properties that are packable, there can be 318 talkers on a network each with as many streams as they can fit on their links.
 * If all the stream properties across the entire network are packable, there can be much more than 318 talkers on a network.
 
+What makes stream properties packable?
+--------------------------------------
 
+A stream has the following properties:
 
+* Stream ID
+* Destination MAC Address
+* Stream Class
+* Bandwidth
+* MSRP Accumulated Latency
+
+In order for two streams to be "Packable," the two streams are required to have the same Stream Class, Bandwidth, MSRP Accumulated Latency.  The two streams must have consecutive Stream ID's and Destination MAC addresses.
+
+A Talker that provides multiple streams of the same size would typically automatically have packable stream properties.
+
+In order to have packable streams from multiple talkers on the network the AVDECC Controller is required to use the **SET_STREAM_INFO** command to manually set the Stream ID and Destination MAC address for each talker stream source.
 
 
 
