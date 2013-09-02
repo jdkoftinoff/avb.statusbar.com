@@ -13,12 +13,12 @@ Version 2.3
 
 .. slides::
 
-   /tools/AVB_Bandwidth_Calculator/AVB_Bandwidth_Calculator_V2_3.png
+   /tools/AVB-Bandwidth-Calculator-for-Numbers/AVB_Bandwidth_Calculator_V2_3.png
 
 Download Link
 -------------
 
-* `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator/AVB_Bandwidth_Calculator_V2_3.zip>`_
+* `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator_V2_3.zip>`_
 
 Changes
 -------
