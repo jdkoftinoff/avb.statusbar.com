@@ -18,7 +18,7 @@ Version 2.4
 Download Link
 -------------
 
-* `AVB_Bandwidth_Calculator_V2_3.zip <AVB_Bandwidth_Calculator_V2_4.zip>`_
+* `AVB_Bandwidth_Calculator_V2_4.zip <AVB_Bandwidth_Calculator_V2_4.zip>`_
 
 Changes
 -------
