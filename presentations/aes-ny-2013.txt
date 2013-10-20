@@ -1,0 +1,11 @@
+.. link: 
+.. description: Presentation on IEEE Std 1722.1-2013 at AES NY 2013
+.. tags: presentation avdecc 1722.1 
+.. date: 2013/10/20 13:42:01
+.. title: AVDECC AES NY 2013 Presentation
+.. slug: avdecc-aes-ny-2013-presentation
+
+
+
+files/presentation/avdecc-aes-ny-2013.pdf 
+

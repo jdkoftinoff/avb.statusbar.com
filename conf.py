@@ -84,6 +84,7 @@ post_pages = (
     ("news/*.txt", "news", "post.tmpl", True),
     ("pages/*.txt", "", "story.tmpl", False),
     ("article/*.txt", "article", "story.tmpl", False),
+    ("presentation/*.txt", "presentation", "story.tmpl", False)
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -522,6 +523,7 @@ GLOBAL_CONTEXT = {
             ('/article/', 'Articles'),
             ('/tools/', 'Tools'),
             ('/code/', 'Code'),
+            ('/presentation/', 'Presentations'),
 #            ('/archive.html', 'Archives'),
 #            ('/categories/index.html', 'Tags'),
             ),
