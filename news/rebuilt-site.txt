@@ -1,6 +1,7 @@
 .. link: 
 .. description: 
 .. tags: 
+.. category: news
 .. date: 2013/07/27 21:43:43
 .. title: Rebuilt site
 .. slug: rebuilt-site

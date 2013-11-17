@@ -1,6 +1,7 @@
 .. link: 
 .. description: Stretto
-.. tags: code, cpp, Stretto
+.. category: code
+.. tags: code, c++, Stretto
 .. date: 2013/07/27 14:59:17
 .. title: Stretto
 .. slug: Stretto

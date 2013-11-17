@@ -1,6 +1,7 @@
 .. link: 
 .. description: jdksavdecc-python
-.. tags: code, c, avdecc 
+.. category: code
+.. tags: code, python, AVDECC 
 .. date: 2013/07/27 14:59:17
 .. title: jdksavdecc-python
 .. slug: jdksavdecc-python

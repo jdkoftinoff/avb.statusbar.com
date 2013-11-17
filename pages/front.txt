@@ -1,6 +1,7 @@
 .. link: /
 .. description: Front Page 
-.. tags: 
+.. tags: index
+.. category: overview
 .. date: 2013/07/27 14:59:17
 .. title: AVB
 .. slug: front

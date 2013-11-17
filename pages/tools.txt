@@ -1,5 +1,6 @@
 .. link: Tools
 .. description: Tools
+.. category: tools
 .. tags: tools
 .. date: 2013/07/27 14:59:17
 .. title: Tools

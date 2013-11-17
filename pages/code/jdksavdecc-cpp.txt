@@ -1,6 +1,7 @@
 .. link: 
 .. description: jdksavdecc-cpp
-.. tags: code, cpp, avdecc 
+.. category: code
+.. tags: code, c++, AVDECC 
 .. date: 2013/07/27 14:59:17
 .. title: jdksavdecc-cpp
 .. slug: jdksavdecc-cpp

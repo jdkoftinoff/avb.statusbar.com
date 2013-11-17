@@ -1,6 +1,7 @@
 .. link: 
 .. description: microsupport
-.. tags: code, c, avdecc 
+.. category: code
+.. tags: code, c 
 .. date: 2013/07/27 14:59:17
 .. title: microsupport
 .. slug: microsupport

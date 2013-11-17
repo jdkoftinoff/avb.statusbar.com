@@ -1,6 +1,7 @@
 .. link: 
 .. description: AVB Bandwidth Calculator for Numbers
-.. tags: tools calculator
+.. category: tools
+.. tags: tools, calculator
 .. date: 2013/10/08 11:47:17
 .. title: AVB Bandwidth Calculator for Numbers
 .. slug: AVB-Bandwidth-Calculator-for-Numbers
