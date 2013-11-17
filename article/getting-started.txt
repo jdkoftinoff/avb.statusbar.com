@@ -1,6 +1,5 @@
 .. link: 
 .. description: How to get started with AVB
-.. tags: getting started
 .. category: articles
 .. date: 2013/07/28 15:07:51
 .. title: Getting Started

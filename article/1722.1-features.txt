@@ -1,6 +1,5 @@
 .. link: 
 .. description: IEEE 1722.1 (AVDECC) Protocol Features
-.. tags: AVDECC
 .. category: articles
 .. date: 2013/07/28 15:07:51
 .. title: IEEE 1722.1 Protocol Features

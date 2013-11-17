@@ -1,7 +1,6 @@
 .. link: 
 .. description: Presentation on IEEE Std 1722.1-2013 at AES NY 2013
-.. cateogry: presentation
-.. tags: presentation, AVDECC, 1722.1, AES
+.. category: presentations
 .. date: 2013/10/20 13:42:01
 .. title: AVDECC AES NY 2013 Presentation
 .. slug: avdecc-aes-ny-2013-presentation

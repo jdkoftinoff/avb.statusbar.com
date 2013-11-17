@@ -1,7 +1,6 @@
 .. link: 
 .. description: jdksavdecc-proxy
 .. category: code
-.. tags: code, c, AVDECC 
 .. date: 2013/07/27 14:59:17
 .. title: jdksavdecc-proxy
 .. slug: jdksavdecc-proxy

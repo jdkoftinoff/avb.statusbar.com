@@ -1,7 +1,6 @@
 .. link: 
 .. description: 
 .. category: FAQ
-.. tags: FAQ 
 .. date: 2013/07/27 14:59:17
 .. title: FAQ
 .. slug: faq

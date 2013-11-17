@@ -63,15 +63,15 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-#            ('/about/', 'About'),
-            ('/news/', 'News'),
-            ('/faq/', 'FAQ'),
-#            ('/article/', 'Articles'),
-#            ('/tools/', 'Tools'),
-#            ('/code/', 'Code'),
-#            ('/presentations/', 'Presentations'),
+#            ('/about.html', 'About'),
+            ('/news.html', 'News'),
+            ('/faq.html', 'FAQ'),
+#            ('/page/article/', 'Articles'),
+#            ('/page/tools/', 'Tools'),
+#            ('/page/code/', 'Code'),
+#            ('/page/presentations/', 'Presentations'),
 #            ('/archive.html', 'Archives'),
-            ('/categories/index.html', 'Tags'),
+            ('/tags/', 'Tags'),
             ('/rss.xml', 'RSS'),
     ),
 }
@@ -113,16 +113,16 @@ NAVIGATION_LINKS = {
 #
 
 POSTS = (
-    ("news/*.rst", "news", "post.tmpl"),
-    ("news/*.txt", "news", "post.tmpl"),
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
-    ("pages/*.rst", "", "story.tmpl"),
-    ("pages/*.txt", "", "story.tmpl"),
+    ("news/*.rst", "post", "post.tmpl"),
+    ("news/*.txt", "post", "post.tmpl"),
+    ("posts/*.rst", "post", "post.tmpl"),
+    ("posts/*.txt", "post", "post.tmpl"),
+    ("pages/*.rst", "page", "story.tmpl"),
+    ("pages/*.txt", "page", "story.tmpl"),
     ("article/*.rst", "article", "story.tmpl"),
     ("article/*.txt", "article", "story.tmpl"),
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.rst", "story", "story.tmpl"),
+    ("stories/*.txt", "story", "story.tmpl"),
 )
 PAGES = (
 #    ("pages/*.rst", "", "story.tmpl"),
@@ -163,7 +163,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = True
 
 # If this is set to True, then posts that are not translated to a language
 # LANG will not be visible at all in the pages in that language.
@@ -178,14 +178,14 @@ COMPILERS = {
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
-TAG_PATH = "categories"
+TAG_PATH = "tags"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
 TAG_PAGES_ARE_INDEXES = False
 
 # Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-INDEX_PATH = "post"
+INDEX_PATH = "item"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -217,11 +217,22 @@ SLUG_TAG_PATH = True
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [ 
-    ('about.html','/about'),
-    ('news.html','/news'),
-    ('tools.html','/tools'),
-    ('code.html','/code'),
-    ('faq.html','/faq'),
+    ('about','/page/about'),
+    ('about.html','/page/about'),
+    ('articles.html','/tags/cat_articles.html'),
+    ('articles','/tags/cat_articles.html'),
+    ('news','/tags/cat_news.html'),
+    ('news.html','/tags/cat_news.html'),
+    ('tools','/tags/cat_tools.html'),
+    ('tools.html','/tags/cat_tools.html'),
+    ('presentations','/tags/cat_presentations.html'),
+    ('presentations.html','/tags/cat_presentations.html'),
+    ('code', '/page/code'),
+    ('code.html','/page/code'),
+    ('faq','/page/faq'),
+    ('faq.html','/page/faq'),
+    ('archive.html','/archive/archive.html'),
+    ('index.html','/page/'),
 ]
 
 # Commands to execute to deploy. Can be anything, for example,
@@ -674,15 +685,6 @@ LOGGING_HANDLERS = {
 GLOBAL_CONTEXT = {
     'sidebar_links': {
         'en': (
-            ('/about/', 'About'),
-            ('/news/', 'News'),
-            ('/faq/', 'FAQ'),
-            ('/article/', 'Articles'),
-            ('/tools/', 'Tools'),
-            ('/code/', 'Code'),
-            ('/presentations/', 'Presentations'),
-            ('/archive.html', 'Archives'),
-            ('/categories/index.html', 'Tags'),
             ),
     }
 }

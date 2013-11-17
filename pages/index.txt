@@ -1,7 +1,6 @@
 .. link: /
 .. description: AVB Front Page
 .. category: overview
-.. tags: index
 .. date: 2013/07/27 14:59:17
 .. title: AVB
 .. slug: index
@@ -18,14 +17,14 @@ Contents
 
 This site contains the following sections:
 
-* `News <news/>`_: What is new on this site and in the AVB industry.
-* `FAQ <faq/>`_: Frequently Asked Questions about the technologies behind AVB.
-* `Articles <articles/>`_: Articles about AVB.
-* `AVB tools <tools/>`_: Spreadsheets and other utility tools for helping people understand AVB.
-* `AVB code <code/>`_: Open source code useful for AVB devices.
-* `Presentations <presentations/>`_: Public presentations made by Jeff Koftinoff.
-* `Archives <archive.html>`_: Archives of news and articles.
-* `Tags <categories/index.html>`_: Articles indexed by tags.
+* `News </news.html>`_: What is new on this site and in the AVB industry.
+* `FAQ </faq.html>`_: Frequently Asked Questions about the technologies behind AVB.
+* `Articles </articles.html>`_: Articles about AVB.
+* `AVB tools </tools.html>`_: Spreadsheets and other utility tools for helping people understand AVB.
+* `AVB code </code.html>`_: Open source code useful for AVB devices.
+* `Presentations </presentations.html>`_: Public presentations made by Jeff Koftinoff.
+* `Archives </archive.html>`_: Archives of news and articles.
+* `Tags </tags/index.html>`_: Articles indexed by tags.
 
 
 About avb.statusbar.com

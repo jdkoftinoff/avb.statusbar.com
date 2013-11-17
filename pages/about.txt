@@ -1,6 +1,5 @@
 .. link: /
 .. description: About avb.statusbar.com
-.. tags: 
 .. date: 2013/07/27 14:59:17
 .. title: About avb.statusbar.com
 .. slug: about

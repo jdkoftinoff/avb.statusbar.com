@@ -1,25 +1,22 @@
 .. link: 
 .. description: AVB Bandwidth Calculator for Numbers
 .. category: tools
-.. tags: tools, calculator
 .. date: 2013/10/08 11:47:17
-.. title: AVB Bandwidth Calculator for Numbers
-.. slug: AVB-Bandwidth-Calculator-for-Numbers
+.. title: AVB Bandwidth Calculator for Numbers V2.4
+.. slug: AVB-Bandwidth-Calculator-for-Numbers-V2.4
 
-AVB Bandwidth Calculator for Apple Numbers
-==========================================
+AVB Bandwidth Calculator for Apple Numbers V2.4
+===============================================
 
-Version 2.4
------------
 
 .. slides::
 
-   /tools/AVB-Bandwidth-Calculator-for-Numbers/AVB_Bandwidth_Calculator_V2_4.png
+   /files/tools/AVB-Bandwidth-Calculator-for-Numbers/AVB_Bandwidth_Calculator_V2_4.png
 
 Download Link
 -------------
 
-* `AVB_Bandwidth_Calculator_V2_4.zip <AVB_Bandwidth_Calculator_V2_4.zip>`_
+* `AVB_Bandwidth_Calculator_V2_4.zip </files/tools/AVB-Bandwidth-Calculator-for-Numbers/AVB_Bandwidth_Calculator_V2_4.zip>`_
 
 Changes
 -------

@@ -1,7 +1,6 @@
 .. link: 
 .. description: Obbligato
 .. category: code
-.. tags: code, c++, Obbligato 
 .. date: 2013/07/27 14:59:17
 .. title: Obbligato
 .. slug: Obbligato
