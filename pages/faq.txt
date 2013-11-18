@@ -8,7 +8,7 @@
 What is this website for?
 -------------------------
 
-See `About avb.statusbar.com </about/>`_.
+See `About avb.statusbar.com </>`_.
 
 What is AVB?
 ------------
