@@ -18,14 +18,14 @@
 
    This site contains the following sections:
 
-   * `News </news.html>`_: What is new on this site and in the AVB industry.
-   * `FAQ </faq.html>`_: Frequently Asked Questions about the technologies behind AVB.
-   * `Articles </articles.html>`_: Articles about AVB.
-   * `AVB tools </tools.html>`_: Spreadsheets and other utility tools for helping people understand AVB.
-   * `AVB code </code.html>`_: Open source code useful for AVB devices.
-   * `Presentations </presentations.html>`_: Public presentations made by Jeff Koftinoff.
-   * `Archives </archive.html>`_: Archives of news and articles.
-   * `Tags </tags/index.html>`_: Articles indexed by tags.
+   * `What is new on this site and in the AVB industry. </news.html>`_
+   * `Frequently Asked Questions about the technologies behind AVB. </faq.html>`_ 
+   * `Articles about AVB. </articles.html>`_ 
+   * `AVB tools </tools.html>`_ 
+   * `AVB code </code.html>`_
+   * `Presentations </presentations.html>`_
+   * `Archives </archive.html>`_
+   * `Articles indexed by category </tags/index.html>`_
 
 .. class:: hero-unit
 
