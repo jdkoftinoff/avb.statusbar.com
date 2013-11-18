@@ -318,7 +318,7 @@ GALLERY_SORT_BY_DATE = False
 # translated
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "bootstrap3-gradients-jinja"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -482,6 +482,9 @@ MathJax.Hub.Config({
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
+
+SOCIAL_BUTTONS_CODE = ""
+
 # SOCIAL_BUTTONS_CODE = """
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
@@ -652,12 +655,12 @@ USE_BUNDLES = True
 # Experimental plugins - use at your own risk.
 # They probably need some manual adjustments - please see their respective
 # readme.
-# ENABLED_EXTRAS = [
+ENABLED_EXTRAS = [
 #     'planetoid',
 #     'ipynb',
-#     'local_search',
+     'local_search',
 #     'render_mustache',
-# ]
+]
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
