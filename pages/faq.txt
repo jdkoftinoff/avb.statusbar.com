@@ -102,22 +102,42 @@ Common examples:
 One Channel Per Stream
 ``````````````````````
 
-Using one channel per stream is the most inefficient but also the most flexible:
 
-* 48 kHz Audio over a 100baseT Ethernet link, one channel per stream: 11 streams = 11 channels per link
-* 48 kHz Audio over a Gigabit Ethernet link, one channel per stream: 113 streams = 113 channels per link
-* 96 kHz Audio over a 100baseT Ethernet link, one channel per stream: 9 streams = 9 channels per link
-* 96 kHz Audio over a Gigabit Ethernet link, one channel per stream:  92 streams = 92 channels per link
+Using one channel per stream is the most inefficient but also the most flexible:  
+
+.. container:: table-responsive
+
+   .. table:: Maximum streams per link, 1 channel per stream
+      :class: table-condensed table-striped table-bordered table-hover table
+
+      ==========   ===========   ===============   ============   =============
+      Link Speed   Sample Rate   Channels/Stream   Streams/Link   Channels/Link
+      ==========   ===========   ===============   ============   =============
+      100base-T    48 kHz               1               11              11
+      GigE         48 kHz               1              113             113
+      100base-T    96 kHz               1                9               9
+      GigE         96 kHz               1               92              92
+      ==========   ===========   ===============   ============   =============
+
 
 Maximum Channels Per Stream
 ```````````````````````````
 
 The maximum number of channels that can be put in a single stream is dependant on packet time, packet size, and audio format:
 
-* 48 kHz Audio over a 100baseT Ethernet link: 39 channels per stream, 1 stream = 39 channels per link
-* 48 kHz Audio over a Gigabit Ethernet link: 52 channels per stream, 7 streams = 364 channels per link
-* 96 kHz Audio over a 100baseT ethernet link: 21 channels per stream, 1 stream = 21 channels per link
-* 96 kHz Audio over a Gigabit ethernet link: 28 channels per stream, 7 streams = 196 channels per link
+.. container:: table-responsive
+
+   .. table:: Maximum channels per stream and per link
+      :class: table-condensed table-striped table-bordered table-hover table
+
+      ==========   ===========   ===============   ============   =============
+      Link Speed   Sample Rate   Channels/Stream   Streams/Link   Channels/Link
+      ==========   ===========   ===============   ============   =============
+      100base-T    48 kHz              39                1              39
+      GigE         48 kHz              52                7             364
+      100base-T    96 kHz              21                1              21
+      GigE         96 kHz              28                7             196
+      ==========   ===========   ===============   ============   =============
 
 
 How many AVB streams of audio can you have on an entire network?
