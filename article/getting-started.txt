@@ -4,6 +4,7 @@
 .. date: 2013/07/28 15:07:51
 .. title: Getting Started
 .. slug: getting-started
+.. tags: beginner
 
 First Steps
 -----------

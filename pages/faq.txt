@@ -5,6 +5,17 @@
 .. title: FAQ
 .. slug: faq
 
+.. container: panel-group
+
+   .. container: panel
+
+       .. container: panel-heading
+
+          .. container: panel-title
+
+         
+
+
 What is this website for?
 -------------------------
 

@@ -4,6 +4,7 @@
 .. date: 2013/07/28 15:07:51
 .. title: IEEE 1722.1 Protocol Features
 .. slug: 1722.1-features
+.. tags: AVDECC, 1722.1
 
 Overview
 --------

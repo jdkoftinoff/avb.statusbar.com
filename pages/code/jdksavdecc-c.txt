@@ -4,7 +4,7 @@
 .. date: 2013/07/27 14:59:17
 .. title: jdksavdecc-c
 .. slug: jdksavdecc-c
-
+.. tags: AVDECC, 1722.1
 
 A library for the AVDECC protocol in the `C programming language. <http://en.wikipedia.org/wiki/C_(programming_language)>`_.
 

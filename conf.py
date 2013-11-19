@@ -318,7 +318,7 @@ GALLERY_SORT_BY_DATE = False
 # translated
 
 # Name of the theme to use.
-THEME = "bootstrap3-gradients-jinja"
+THEME = "custom"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
