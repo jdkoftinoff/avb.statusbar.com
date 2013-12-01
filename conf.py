@@ -72,7 +72,6 @@ NAVIGATION_LINKS = {
 #            ('/page/presentations/', 'Presentations'),
 #            ('/archive.html', 'Archives'),
             ('/tags/', 'Tags'),
-            ('/rss.xml', 'RSS'),
     ),
 }
 
