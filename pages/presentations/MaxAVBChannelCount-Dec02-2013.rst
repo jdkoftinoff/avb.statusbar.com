@@ -1,14 +1,12 @@
 .. link: 
 .. description: Presentation on the Maximum AVB Channel Counts 
 .. category: presentations
-.. date: 2013/12/02 13:42:01
+.. date: 2013/12/02 10:42:01
 .. title: Maximum AVB Channel Counts
-.. slug: maxium-avb-channel-counts
-.. tags: AVTP, bandwidth
+.. slug: maximum-avb-channel-counts
 
-
-Presentation
-------------
+Maximum AVB Channel Counts
+==========================
 
 The breakdown of all of the ethernet frame timing is discussed, and the maximum channel counts for 100baseT and gigE physical layer are calculated for both 48 kHz and 96 kHz AVB streams using AVTP subtype 0 ( iec61883-6 AM824 ) encoding.
 

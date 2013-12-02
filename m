@@ -1,1 +1,6 @@
-nikola clean && nikola build && nikola deploy
+#! /bin/bash -e
+
+nikola build
+nikola check -l -f
+nikola deploy
+
