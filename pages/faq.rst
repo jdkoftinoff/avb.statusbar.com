@@ -100,7 +100,7 @@ The answer to this question depends on:
 * The format of the audio media
 * The count of streams
 
-Use the `tools </tools/>`_ to calculate arbitrary combinations.
+Use the `tools </tags/cat_tools.html>`_ to calculate arbitrary combinations.
 
 For the very detailed explanations of the contents of an AVB Audio Ethernet frame, see the `Maximum AVB Channel Counts </page/presentations/maximum-avb-channel-counts/>`_ presentation.
 
