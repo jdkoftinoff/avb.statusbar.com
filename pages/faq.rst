@@ -31,8 +31,9 @@ How is media transported with AVB?
 
 IEEE Std 1722-2011 builds on the following standards for media packetization:
 
+* `Instrumentation & Industrial Digital Camera <http://en.wikipedia.org/wiki/IIDC#IIDC>`_, for the transport of uncompressed low latency digital camera video.
+* `IEC 61883-4 <http://webstore.iec.ch/preview/info_iec61883-4%7Bed2.0%&Den.pdf>`_, for the transport of MPEG video streams.
 * `IEC 61883-6 <http://webstore.iec.ch/preview/info_iec61883-6%7Bed2.0%7Den.pdf>`_, for the transport of Audio, SMPTE Time Code, and MIDI.
-* `IEC 61883-8 <http://webstore.iec.ch/preview/info_iec61883-8{ed1.0}en.pdf>`_, for the transport of Video
 * `1394 Trade Association document 1999024 <http://www.1394ta.org/developers/specifications/1999024.html>`_, which details SMPTE Time Code encapsulation within IEC 61883-6
 * `MIDI MMA AVB Payload Formats <http://www.midi.org/techspecs/avbtp.php>`_
 
