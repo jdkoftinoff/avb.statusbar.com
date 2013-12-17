@@ -21,11 +21,13 @@ To clone the respository, use `git <http://gitscm.com>`_:
 
    git clone https://github.com/jdkoftinoff/jdksavdecc-c.git -b minimal
 
+Or download a release archive from https://github.com/jdkoftinoff/jdksavdecc-c/releases
+
 Documentation
 -------------
 
 minimal branch
-`````````````
+``````````````
 
 The **minimal** branch contains the AVDECC definitions and utilities but does not contain any state machines:
 
