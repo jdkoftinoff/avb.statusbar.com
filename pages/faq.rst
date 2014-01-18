@@ -188,12 +188,12 @@ The `IEEE 1722 working group <http://grouper.ieee.org/groups/1722/>`_ is current
 
 * AVTP Audio Format (allowing for more flexibility of bit widths, samples per packet, and channel counts.
 * Compressed Video Format (allowing for H.264, MJPEG, and JPEG2000 formats)
-* Automotive Control (allowing for real time transport of FlexRay™, CAN FD, LIN®, and MOST® messages)
-* Clock Reference Streams (for transporting arbitrary clocks including video verticle and horizontal sync clocks)
-* Coded Audio (allowing for Dolby™ E and other coded audio formats)
-* Time Sensitive Control Streams (for transporting IEEE Std 1722-2013 and other control protocols within an AVB Stream)
+* Automotive Control Format (allowing for real time transport of FlexRay™, CAN FD, LIN®, and MOST® messages)
+* Clock Reference Format (for transporting arbitrary clocks including video verticle and horizontal sync clocks)
+* Coded Audio Format (allowing for Dolby™ E and other coded audio formats)
+* Time Sensitive Control Format (for transporting IEEE Std 1722-2013 and other control protocols within an AVB Stream)
 * SDI Video Format (for transporting high definition uncompressed video via `SMPTE Serial Digital Interface <http://en.wikipedia.org/wiki/Serial_digital_interface>`_ )
-* Active Video Format (for transporting generic video frame buffers)
+* Raw Video Format (for transporting generic video frame buffers)
 
 IEEE P1722A also adds session based `AES-GCM encrypted <http://en.wikipedia.org/wiki/Galois/Counter_Mode>`_ streams and control messages and `Elliptic Curve Signing and Encryption using IEEE Std 1363a-2004 <http://en.wikipedia.org/wiki/IEEE_P1363>`_ for control message authentication and encryption.
 
