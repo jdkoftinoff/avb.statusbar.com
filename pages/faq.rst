@@ -56,7 +56,7 @@ Using one channel per stream is the most inefficient but also the most flexible:
 
 .. container:: table-responsive
 
-   .. table:: Maximum streams per link, 1 channel per stream
+   .. table:: Maximum streams per link, 1 channel per stream using async packetization
       :class: table-condensed table-striped table-bordered table-hover table
 
       ==========   ===========   ===============   ============   =============
@@ -76,7 +76,7 @@ The maximum number of channels that can be put in a single stream is dependant o
 
 .. container:: table-responsive
 
-   .. table:: Maximum channels per stream and per link
+   .. table:: Maximum channels per stream and per link using async packetization
       :class: table-condensed table-striped table-bordered table-hover table
 
       ==========   ===========   ===============   ============   =============
