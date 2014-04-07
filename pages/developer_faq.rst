@@ -1,6 +1,6 @@
 .. link: 
 .. description: 
-.. tags FAQ
+.. tags: FAQ
 .. date: 2013/07/27 14:59:17
 .. title: Developer FAQ
 .. slug: developer-faq

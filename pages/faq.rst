@@ -1,5 +1,4 @@
-.. link: 
-.. description: 
+.. description: General AVB FAQ
 .. category: FAQ
 .. date: 2014/02/10 08:08:00
 .. title: General AVB FAQ
@@ -27,8 +26,8 @@ What are the minimum requirements for an AVB switch?
 
 An AVB Switch is required to support:
 
-* IEEE Std. 802.1Q-2011 `FQTSS <developer#fqtss>`_ and `SRP <developer#srp>`.
-* IEEE Std. 802.1AS-2011 `gPTP <developer#gptp>`_ on each AVB enabled ethernet port
+* IEEE Std. 802.1Q-2011 `FQTSS </page/developer-faq#fqtss>`_ and `SRP </page/developer-faq#srp>`_.
+* IEEE Std. 802.1AS-2011 `gPTP </page/developer-faq#gptp>`_ on each AVB enabled ethernet port
 
 `AVnu Compliance <http://avnu.org>`_ is important for a switch to have in order to ensure correct operation of your AVB network.
 

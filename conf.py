@@ -66,6 +66,7 @@ NAVIGATION_LINKS = {
 #            ('/about.html', 'About'),
             ('/news.html', 'News'),
             ('/faq.html', 'FAQ'),
+            ('/presentations.html', 'Presentations'),
 #            ('/page/article/', 'Articles'),
 #            ('/page/tools/', 'Tools'),
 #            ('/page/code/', 'Code'),
