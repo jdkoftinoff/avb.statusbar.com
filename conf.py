@@ -10,7 +10,7 @@ BLOG_AUTHOR = "Jeff Koftinoff"
 BLOG_TITLE = "AVB"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://avb.statusbar.com/"
+SITE_URL = "https://avb.statusbar.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
@@ -527,7 +527,7 @@ RSS_LINK = None
 #
 SEARCH_FORM = """
 <!-- Custom search -->
-<form method="get" id="search" action="http://duckduckgo.com/"
+<form method="get" id="search" action="https://duckduckgo.com/"
  class="navbar-form pull-right">
 <input type="hidden" name="sites" value="%s"/>
 <input type="hidden" name="k8" value="#444444"/>
