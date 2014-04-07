@@ -20,7 +20,7 @@ What is AVB?
 
 `Audio Video Bridging <http://en.wikipedia.org/wiki/Audio_Video_Bridging>`_ is a term for a collection of IEEE Standards for time sensitive networking which facilitates the transport of high performance audio and video on a LAN.
 
-For details of the standards involved, see the `AVB Developer FAQ <developer>`_.
+For details of the standards involved, see the `AVB Developer FAQ </page/developer-faq>`_.
 
 What are the minimum requirements for an AVB switch?
 ----------------------------------------------------

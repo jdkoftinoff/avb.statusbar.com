@@ -215,7 +215,7 @@ SLUG_TAG_PATH = True
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = [ 
+REDIRECTIONS = [
     ('about','/page/about'),
     ('about.html','/page/about'),
     ('articles.html','/tags/cat_articles.html'),
@@ -287,7 +287,7 @@ DEPLOY_COMMANDS = [
 # Use an external gzip command? None means no.
 # Example: GZIP_COMMAND = "pigz -k {filename}"
 # GZIP_COMMAND = None
-# Make sure the server does not return a "Accept-Ranges: bytes" header for 
+# Make sure the server does not return a "Accept-Ranges: bytes" header for
 # files compressed by this option! OR make sure that a ranged request does not
 # return partial content of another representation for these resources. Do not
 # use this feature if you do not understand what this means.
@@ -317,7 +317,7 @@ GALLERY_SORT_BY_DATE = False
 # translated
 
 # Name of the theme to use.
-THEME = "custom"
+THEME = "bootstrap3"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
