@@ -23,4 +23,4 @@ Other avaialble software code projects and libraries for AVB include:
 
 * `Open-AVB <https://github.com/intel-ethernet/Open-AVB>`_, an open source software stack project initiated by Intel.
 * `The XMOS XCore Open Source Project <http://github.xcore.com>`_, an open source AVB implementation for the XMOS chips.
-
+* `Audioscience's AVDECC Controller Library <https://github.com/audioscience/avdecc-lib>`_, an open source 1722.1 controller library and example command line tool.
