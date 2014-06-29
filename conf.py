@@ -59,7 +59,7 @@ TRANSLATIONS = {
     # "es": "./es",
 }
 
-ANALYTICS = """
+BODY_END = """
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -703,7 +703,6 @@ LOGGING_HANDLERS = {
 
 
 GLOBAL_CONTEXT = {
-    'analytics' : ANALYTICS,
     'sidebar_links': {
         'en': (
             ),
