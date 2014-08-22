@@ -76,18 +76,18 @@ BODY_END = """
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-#            ('/about.html', 'About'),
-            ('/news.html', 'News'),
-            ('/faq.html', 'FAQ'),
-            ('/presentations.html', 'Presentations'),
-#            ('/page/article/', 'Articles'),
-#            ('/page/tools/', 'Tools'),
-#            ('/page/code/', 'Code'),
-#            ('/page/presentations/', 'Presentations'),
-#            ('/archive.html', 'Archives'),
-            ('/tags/', 'Tags'),
+            ('/index.html', 'Home', 'icon-home'),
+            ('/news.html', 'News', 'icon-news'),
+            ('/faq.html', 'FAQ', 'icon-question-sign'),
+            ('/presentations.html', 'Presentations', 'icon-book'),
+            ('/tags/', 'Tags', 'icon-tags'),
+            ('/archive.html', 'Archives', 'icon-folder-open-alt'),
+            ('https://twitter.com/statusbar', 'My Twitter', 'icon-twitter'),
+            ('http://ca.linkedin.com/in/jdkoftinoff', 'My LinkedIn', 'icon-linkedin'),
     ),
 }
+
+
 
 # Below this point, everything is optional
 
@@ -242,8 +242,8 @@ REDIRECTIONS = [
     ('presentations.html','/tags/cat_presentations.html'),
     ('code', '/page/code'),
     ('code.html','/page/code'),
-    ('faq','/page/faq'),
-    ('faq.html','/page/faq'),
+    ('faq','/tags/cat_faq.html'),
+    ('faq.html','/tags/cat_faq.html'),
     ('archive.html','/archive/archive.html'),
     ('index.html','/page/'),
 ]
@@ -331,7 +331,8 @@ GALLERY_SORT_BY_DATE = False
 # translated
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+#THEME = "bootstrap3"
+THEME = "zen"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -513,7 +514,7 @@ SOCIAL_BUTTONS_CODE = ""
 # """
 
 # Hide link to source for the posts?
-HIDE_SOURCELINK = True
+# HIDE_SOURCELINK = True
 # Copy the source files for your pages?
 # Setting it to False implies HIDE_SOURCELINK = True
 COPY_SOURCES = True

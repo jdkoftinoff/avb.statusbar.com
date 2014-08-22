@@ -1,6 +1,7 @@
 .. link: 
 .. description: 
 .. tags: FAQ
+.. category: FAQ
 .. date: 2013/07/27 14:59:17
 .. title: Developer FAQ
 .. slug: developer-faq
@@ -80,6 +81,22 @@ Can an AVB device just use IEEE 1588v2 (PTP) instead of 802.1AS?
 
 No, IEEE 802.1AS is required to maintain the required synchronization compatibility and accuracy.
 
+My device's ethernet port says it supports IEEE 1588.  Can it do AVB?
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+IEEE 1588v2 is a framework for time synchronization.
+
+Profiles of 1588v2 are not necessarily compatible or even require the same hardware.
+
+For instance, once profile of IEEE 1588v2 is used for synchronization of Cellular Telephone towers and that profile has very different hardware and protocol requirements compared to the default 1588v2 profile seen in generic switches, and is different again compared to the profile used in industrial switches.
+
+So there is no clear definition of what “1588-2008 capable hardware” means.  I have seen one ethernet chip that says that but only timestamps incoming packets, not outgoing packets.
+
+802.1AS has no options like that. If your device supports 802.1AS then it will provide AVB quality synchronization better than the default 1588v2 profile.  You need to have the  support in the ethernet hardware to provide timestamps of specific types of both incoming and outgoing packets.  These timestamps need to represent the time that the packet hit the wire.  Many ethernet hardware systems provide timestamps instead at the MAC level which means your software needs to compensate for the PHY latencies for your specific PHY.  The PHY latencies are typically different for 100baseT and GigE and different for TX and RX.
+
+802.1AS needs timestamping of Pdelay, PdelayFollowUp, PdelayRequest, PdelayRequestFollowUp, Sync, and FollowUp messages for both directions.
+
+
 Can FQTSS be implemented in pure software?
 ''''''''''''''''''''''''''''''''''''''''''
 
@@ -91,6 +108,12 @@ But if you were needing to provide 4 streams simultaneously, then it is much har
 
 Since this can be expensive and inefficient to implement in software so ideally you want an Ethernet interface like the intel i210 ( with the driver at https://github.com/intel-ethernet/Open-AVB/tree/master/kmod/igb ) or the equivalent Broadcom ethernet chip which the Apple Mac OS X uses.
 
+The priority queues are needed for the traffic shaping as defined by IEEE 802.1Q Clause 34 (also known as IEEE 802.1Qav). Media packets have to be properly traffic shaped and need higher priority than non media packets. Ideally you need 4 separate Queues in each direction, in priority order:
+
+* Highest Priority: #1 802.1AS messages
+* Next Priortity : #2 IEEE 1722 media packet messages
+* Next Priority : #3 IEEE 802.1Qat (SRP) stream reservation messages
+* Lowest priority  : #4 all other control messages (IEEE 1722.1, MAAP) and IPv4 and IPv6.
 
 How many AVB streams of audio can you have on an entire network?
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

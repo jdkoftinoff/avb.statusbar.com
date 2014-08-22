@@ -1,8 +1,11 @@
+
+
 .doit.db.db
 .ropeproject
 cache/
 oops/
 output/
+plugins/
 
 *.py[cod]
 
