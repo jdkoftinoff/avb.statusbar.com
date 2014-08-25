@@ -9,7 +9,7 @@
 First Steps
 -----------
 
-#. Familiarize yourself with the standards.
-#. Review the Technical Papers from the `Resource Library <http://www.avnu.org/resource_library>`_ from `AVnu <http://www.avnu.org/>`_ - 
+#. Familiarize yourself with the standards, the `General FAQ </page/faq/>`_, and the `Developer FAQ </page/developer-faq/>`_.
+#. Review the Technical Papers from the `Knowledge Center <http://www.avnu.org/knowledge_center>`_ from `AVnu <http://www.avnu.org/>`_ - Specifically start with `AVB Software Interfaces and Endpoint Architecture Guidelines <http://www.avnu.org/files/static_page_files/C5E0B5F8-1D09-3519-ADB32F1F88E6C057/AVnu_SWAPIs_v1.0.pdf>`_
 
 

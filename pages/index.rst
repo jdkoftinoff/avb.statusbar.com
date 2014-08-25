@@ -19,7 +19,7 @@
    This site contains the following sections:
 
    * `The new AVB Bandwidth Calculator, ABC <https://abc.statusbar.com/>`_
-   * `What is new on this site and in the AVB industry. </news.html>`_
+   * `Getting Started with AVB </article/getting-started/>`_
    * `Frequently Asked Questions about the technologies behind AVB. </faq.html>`_ 
    * `Articles about AVB. </articles.html>`_ 
    * `AVB tools </tools.html>`_ 
