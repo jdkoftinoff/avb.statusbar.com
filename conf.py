@@ -82,7 +82,7 @@ NAVIGATION_LINKS = {
             ('/presentations.html', 'Presentations', 'icon-book'),
             ('/tags/', 'Tags', 'icon-tags'),
             ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-            ('https://twitter.com/statusbar', 'My Twitter', 'icon-twitter'),
+            ('https://twitter.com/avdecc', 'My Twitter', 'icon-twitter'),
             ('http://ca.linkedin.com/in/jdkoftinoff', 'My LinkedIn', 'icon-linkedin'),
     ),
 }
@@ -248,16 +248,8 @@ REDIRECTIONS = [
     ('index.html','/page/'),
 ]
 
-# Commands to execute to deploy. Can be anything, for example,
-# you may use rsync:
-# "rsync -rav output/* joe@my.site:/srv/www/site"
-# And then do a backup, or run `nikola ping` from the `ping`
-# plugin (`nikola install_plugin ping`).
-# To do manual deployment, set it to []
-DEPLOY_COMMANDS = [
- "rsync -rav output/* --delete-after jeffk@jdks2013.statusbar.com:/var/www/web/avb.statusbar.com/"
-]
 
+DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* --delete-after jeffk@jdks2013.statusbar.com:/var/www/web/avb.statusbar.com/']}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
