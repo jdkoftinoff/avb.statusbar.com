@@ -21,18 +21,6 @@ To clone the respository, use `git <http://gitscm.com>`_:
 
    git clone https://github.com/jdkoftinoff/Obbligato.git
 
-Documentation
--------------
-
-master branch
-`````````````
-
-   http://avb1.statusbar.com/docs/master/Obbligato/
-
-development branch
-``````````````````
-
-   http://avb1.statusbar.com/docs/devel/Obbligato/
 
 Prerequisites
 -------------

@@ -21,18 +21,6 @@ To clone the respository, use `git <http://gitscm.com>`_:
 
    git clone https://github.com/jdkoftinoff/jdksavdecc-proxy.git
 
-Documentation
--------------
-
-master branch
-`````````````
-
-   http://avb1.statusbar.com/docs/master/jdksavdecc-proxy/
-
-development branch
-``````````````````
-
-   http://avb1.statusbar.com/docs/devel/jdksavdecc-proxy/
 
 Prerequisites
 -------------
