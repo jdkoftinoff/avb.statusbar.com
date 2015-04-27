@@ -14,5 +14,5 @@ Presented to the IEEE p1722 work group on April 27, 2015
 Download Link
 -------------
 
-* `Choosing_AVB_Stream_Sizes.pdf.pdf </files/presentation/IEEE/Choosing_AVB_Stream_Sizes.pdf>`_
+* `Choosing_AVB_Stream_Sizes.pdf </files/presentation/IEEE/Choosing_AVB_Stream_Sizes.pdf>`_
 
