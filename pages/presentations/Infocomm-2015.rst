@@ -13,5 +13,5 @@ Download Links
 --------------
 
 * `Infocomm-2015-koftinoff.pdf </files/presentation/Infocomm-2015-koftinoff.pdf>`_
-* `Deploying Large Scale AVB-TSN Handout.pdf </files/presentation/Deploying\ Large\ Scale\ AVB-TSN\ Handout.pdf>`_
+* `Deploying Large Scale AVB-TSN Handout.pdf </files/presentation/Deploying%20Large%20Scale%20AVB-TSN%20Handout.pdf>`_
 
