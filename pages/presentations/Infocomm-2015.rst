@@ -9,8 +9,9 @@
 Deploying Large Scale AVB Networks, Infocomm 2015
 =================================================
 
-Download Link
--------------
+Download Links
+--------------
 
 * `Infocomm-2015-koftinoff.pdf </files/presentation/Infocomm-2015-koftinoff.pdf>`_
+* `Deploying Large Scale AVB-TSN Handout.pdf </files/presentation/Deploying Large Scale AVB-TSN Handout.pdf>`_
 
