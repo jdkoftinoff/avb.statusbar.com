@@ -20,12 +20,12 @@
 
    * `The new AVB Bandwidth Calculator, ABC <https://abc.statusbar.com/>`_
    * `Getting Started with AVB </article/getting-started/>`_
-   * `Frequently Asked Questions about the technologies behind AVB. </faq.html>`_ 
-   * `Articles about AVB. </articles.html>`_ 
-   * `AVB tools </tools.html>`_ 
-   * `AVB code </code.html>`_
-   * `Presentations </presentations.html>`_
-   * `Archives </archive.html>`_
+   * `Frequently Asked Questions about the technologies behind AVB. </tags/cat_faq>`_ 
+   * `Articles about AVB. </tags/cat_articles>`_ 
+   * `AVB tools </tags/cat_tools>`_ 
+   * `AVB code </page/code>`_
+   * `Presentations </tags/cat_presentations>`_
+   * `Archives </archive/archive.html>`_
    * `Articles indexed by category </tags/index.html>`_
 
 .. class:: hero-unit

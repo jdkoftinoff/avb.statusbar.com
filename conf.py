@@ -64,7 +64,7 @@ BODY_END = """
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-52398310-1', 'auto');
   ga('send', 'pageview');
@@ -76,14 +76,14 @@ BODY_END = """
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-            ('/index.html', 'Home', 'icon-home'),
-            ('/news.html', 'News', 'icon-news'),
-            ('/faq.html', 'FAQ', 'icon-question-sign'),
-            ('/presentations.html', 'Presentations', 'icon-book'),
-            ('/tags/', 'Tags', 'icon-tags'),
-            ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-            ('https://twitter.com/avdecc', 'My Twitter', 'icon-twitter'),
-            ('http://ca.linkedin.com/in/jdkoftinoff', 'My LinkedIn', 'icon-linkedin'),
+            ('/index.html', 'Home' ),
+            ('/news.html', 'News' ),
+            ('/faq.html', 'FAQ' ),
+            ('/presentations.html', 'Presentations' ),
+            ('/tags/', 'Tags' ),
+            ('/archive.html', 'Archives' ),
+            ('https://twitter.com/avdecc', 'My Twitter' ),
+            ('http://ca.linkedin.com/in/jdkoftinoff', 'My LinkedIn' ),
     ),
 }
 
@@ -232,18 +232,18 @@ SLUG_TAG_PATH = True
 REDIRECTIONS = [
     ('about','/page/about'),
     ('about.html','/page/about'),
-    ('articles.html','/tags/cat_articles.html'),
-    ('articles','/tags/cat_articles.html'),
-    ('news','/tags/cat_news.html'),
-    ('news.html','/tags/cat_news.html'),
-    ('tools','/tags/cat_tools.html'),
-    ('tools.html','/tags/cat_tools.html'),
-    ('presentations','/tags/cat_presentations.html'),
-    ('presentations.html','/tags/cat_presentations.html'),
+    ('articles.html','/tags/cat_articles'),
+    ('articles','/tags/cat_articles'),
+    ('news','/tags/cat_news'),
+    ('news.html','/tags/cat_news'),
+    ('tools','/tags/cat_tools'),
+    ('tools.html','/tags/cat_tools'),
+    ('presentations','/tags/cat_presentations'),
+    ('presentations.html','/tags/cat_presentations'),
     ('code', '/page/code'),
     ('code.html','/page/code'),
     ('faq','/tags/cat_faq.html'),
-    ('faq.html','/tags/cat_faq.html'),
+    ('faq.html','/tags/cat_faq'),
     ('archive.html','/archive/archive.html'),
     ('index.html','/page/'),
 ]
@@ -298,13 +298,15 @@ DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* --delete-after jeffk@jdks2
 # return partial content of another representation for these resources. Do not
 # use this feature if you do not understand what this means.
 
+WRITE_TAG_CLOUD = False
+
 # #############################################################################
 # Image Gallery Options
 # #############################################################################
 
 # Galleries are folders in galleries/
 # Final location of galleries will be output / GALLERY_PATH / gallery_name
-GALLERY_PATH = "galleries"
+GALLERY_FOLDERS = {"galleries" : "galleries"}
 THUMBNAIL_SIZE = 180
 MAX_IMAGE_SIZE = 1280
 USE_FILENAME_AS_TITLE = True
@@ -324,7 +326,7 @@ GALLERY_SORT_BY_DATE = False
 
 # Name of the theme to use.
 #THEME = "bootstrap3"
-THEME = "zen"
+THEME = "oldfashioned"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -593,7 +595,7 @@ SEARCH_FORM = """
 # is served from the NetDNA CDN
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </HEAD>
