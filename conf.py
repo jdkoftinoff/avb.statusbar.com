@@ -326,7 +326,7 @@ GALLERY_SORT_BY_DATE = False
 
 # Name of the theme to use.
 #THEME = "bootstrap3"
-THEME = "oldfashioned"
+THEME = "bootstrap3"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
