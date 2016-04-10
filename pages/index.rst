@@ -2,7 +2,7 @@
 .. description: AVB Front Page
 .. category: overview
 .. date: 2014/02/02 14:59:17
-.. title: AVB
+.. title: AVB/TSN
 .. slug: index
 .. nocomments: True
 
@@ -10,7 +10,7 @@
 
 .. admonition:: Audio Video Bridging
 
-   A collection of links, tools and open source code for Audio Video Bridging (AVB) technologies.
+   A collection of links, tools and open source code for Audio Video Bridging (AVB) and Time Sensitive Networking (TSN) technologies.
 
 .. class:: hero-unit
 

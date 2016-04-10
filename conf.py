@@ -7,7 +7,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jeff Koftinoff"
-BLOG_TITLE = "AVB"
+BLOG_TITLE = "AVB/TSN"
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "https://avb.statusbar.com/"
@@ -15,7 +15,7 @@ SITE_URL = "https://avb.statusbar.com/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
 BLOG_EMAIL = "jeff.koftinoff@statusbar.com"
-BLOG_DESCRIPTION = "AVB Networking Information and News"
+BLOG_DESCRIPTION = "AVB/TSN Networking Information and News"
 
 # Nikola is multilingual!
 #
@@ -82,7 +82,6 @@ NAVIGATION_LINKS = {
             ('/presentations.html', 'Presentations' ),
             ('/tags/', 'Tags' ),
             ('/archive.html', 'Archives' ),
-            ('https://twitter.com/avdecc', 'My Twitter' ),
     ),
 }
 
