@@ -2,7 +2,7 @@
 .. description: 
 .. tags: FAQ
 .. category: FAQ
-.. date: 2013/07/27 14:59:17
+.. date: 2017/07/04 14:59:17
 .. title: Developer FAQ
 .. slug: developer-faq
 
@@ -145,7 +145,7 @@ In order to have packable streams from multiple talkers on the network the AVDEC
 What additional work is being done for AVB standardization?
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-The `IEEE 1722 working group <http://grouper.ieee.org/groups/1722/>`_ is currently working on an amendment to IEEE Std 1722-2011 called IEEE P1722A which will include support for additional media streaming formats:
+The `IEEE 1722 working group <http://grouper.ieee.org/groups/1722/>`_ has completed work on a new version of IEEE 1722 called IEEE Std 1722-2016. It includes support for additional control and streaming formats:
 
 * AVTP Audio Format (allowing for more flexibility of bit widths, samples per packet, and channel counts.
 * Compressed Video Format (allowing for H.264, MJPEG, and JPEG2000 formats)
@@ -153,7 +153,10 @@ The `IEEE 1722 working group <http://grouper.ieee.org/groups/1722/>`_ is current
 * Clock Reference Format (for transporting arbitrary clocks including video vertical and horizontal sync clocks)
 * SDI Video Format (for transporting high definition uncompressed video via `SMPTE Serial Digital Interface <http://en.wikipedia.org/wiki/Serial_digital_interface>`_ )
 * Raw Video Format (for transporting generic video frame buffers)
-* Elliptic Curve Encryption and Signing of control messages
+* ECC Elliptic Curve Encryption and Signing of control messages
 * AES Encryption of control messages and stream data.
+* IPv4 and IPv6 support for the transport of IEEE 1722 streaming data and control messages.
+
+You can purchase a copy of the IEEE 1722-2016 standard from the `IEEE Standards Store - 1722-2016 <http://www.techstreet.com/ieee/standards/ieee-1722-2016?product_id=1901168>`_\ .
 
 
