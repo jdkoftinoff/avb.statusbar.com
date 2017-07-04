@@ -247,7 +247,7 @@ REDIRECTIONS = [
 ]
 
 
-DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* --delete-after jeffk@jdks2013.statusbar.com:/var/www/web/avb.statusbar.com/']}
+DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* --delete-after jeffk@avb.statusbar.com:/var/www/web/avb.statusbar.com/']}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -378,7 +378,7 @@ src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = '<hr/><br/>Contents &copy; {date} <a href="mailto:{email}">{author}</a> Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = '<hr/><br/>Contents &copy; {date} <a href="mailto:{email}">{author}</a> Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a> &mdash; Source code for this website available at <a href="https://github.com/jdkoftinoff/avb.statusbar.com">https://github.com/jdkoftinoff/avb.statusbar.com</a>'
 
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
@@ -403,9 +403,9 @@ COMMENT_SYSTEM_ID = "avb-statusbar"
 # ANNOTATIONS = False
 
 # Create index.html for story folders?
-STORY_INDEX = True
+PAGE_INDEX = True
 # Enable comments on story pages?
-COMMENTS_IN_STORIES = True
+COMMENTS_IN_PAGES = True
 # Enable comments on picture gallery pages?
 COMMENTS_IN_GALLERIES = False
 
@@ -654,7 +654,7 @@ USE_CDN = True
 TIMEZONE = 'US/Pacific'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-USE_BUNDLES = True
+#USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
